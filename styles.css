@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+  --rosa-choque: #ff007f;
+  --roxo-psico: #6a0dad;
+  --laranja-rock: #ff6600;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff0f6;
+}
+
+header {
+  background-color: var(--rosa-choque);
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: var(--laranja-rock);
+}
+
+/* Logo 1 (nav) menor e redonda */
+.nav-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Imagem de início */
+.inicio-fundo {
+  background-image: url('img/rita-fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  width: 100%;
+  height: 606px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.botao-inicio {
+  background-color: var(--roxo-psico);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 14em;
+  height: 3em;
+  font-weight: bold;
+}
+.botao-inicio:hover {
+  background-color: var(--rosa-choque);
+}
+
+h2 {
+  font-family: 'Lemon', cursive;
+  font-size: 2.5em;
+  color: var(--rosa-choque);
+  text-shadow: -2px 2px var(--roxo-psico);
+}
+
+#galeria {
+  background-color: #fbe6f0;
+  border-top: 4px solid var(--laranja-rock);
+  border-bottom: 4px solid var(--laranja-rock);
+}
+
+#contato {
+  background-image: url('img/rita-show.jpg');
+  background-size: cover;
+  padding: 4rem 0;
+}
+
+.formulario {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  border: 2px solid var(--rosa-choque);
+  font-weight: bold;
+}
+.formulario button {
+  background-color: var(--rosa-choque);
+  border: none;
+}
+.formulario button:hover {
+  background-color: var(--roxo-psico);
+}
+
+.form-control {
+  background-color: #f9e6ef;
+}
+
+/* Acessibilidade */
+.acessibilidade {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+#acessibilidade button {
+  background-color: var(--rosa-choque);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+#opcoes-acessibilidade {
+  display: none;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+#opcoes-acessibilidade.apresenta-lista {
+  display: block;
+  background: white;
+  border: 2px solid var(--rosa-choque);
+  border-radius: 10px;
+  padding: 10px;
+}
+#opcoes-acessibilidade li {
+  margin: 5px 0;
+}
+
+/* Alto contraste */
+.alto-contraste {
+  background-color: black !important;
+  color: yellow !important;
+}
+.alto-contraste a {
+  color: cyan !important;
+}
+.alto-contraste header,
+.alto-contraste footer {
+  background-color: #000 !important;
+  color: #fff !important;
+}
